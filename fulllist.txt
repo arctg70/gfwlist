@@ -1,27 +1,4 @@
-
-! Personal list
-!=========================
-
-@@||taobao.com
-@@||jd.com
-@@||10.0.0.3
-@@||teemall.com.cn
-@@||gdh.com.hk
-||pusher.com
-||arukas.io
-||gitbook.com
-||docker.com
-||github.com
-||rmdown.com
-||live.com
-||google.com
-||subhd.com
-||mobile01.com
-||sehuatang.net
-||rarbg.to
-||rarbgprx.org
-
-!========================[AutoProxy 0.2.9]
+[AutoProxy 0.2.9]
 ! Checksum: UQaCI4FrxJx1GqUqyjSqBw
 ! Expires: 6h
 ! Title: GFWList4LL
@@ -7987,3 +7964,27 @@ ultrasurf
 @@|http://ime.baidu.jp
 !################Whitelist End##################
 !---------------------EOF-----------------------
+
+! Personal list
+!=========================
+
+@@||taobao.com
+@@||jd.com
+@@||10.0.0.3
+@@||teemall.com.cn
+@@||gdh.com.hk
+||pusher.com
+||arukas.io
+||gitbook.com
+||docker.com
+||github.com
+||rmdown.com
+||live.com
+||google.com
+||subhd.com
+||mobile01.com
+||sehuatang.net
+||rarbg.to
+||rarbgprx.org
+
+!========================
