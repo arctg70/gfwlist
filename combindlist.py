@@ -26,10 +26,8 @@ def gfwlist():
 
 
 def personallist():
-    f = open('personallist.txt', 'r')
-    personallist = f.read()
-    f.close()
-    print(personallist)
+    with open('personallist.txt', 'r') as f:
+        personallist = f.read()
     return personallist
 
 
@@ -44,9 +42,3 @@ with open('fulllist.txt', 'rb') as f:
 
 with open('fulllist_b64.txt', 'wb') as f:
     f.write(base64.urlsafe_b64encode(data))
-
-
-# encode64 = base64.b64encode(fulllist.encode('utf-8'))
-# f = open('fulllist.txt', 'wb')
-# f.write(encode64)
-# f.close()
