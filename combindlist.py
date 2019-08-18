@@ -41,4 +41,5 @@ with open('fulllist.txt', 'rb') as f:
     data = f.read()
 
 with open('fulllist_b64.txt', 'wb') as f:
-    f.write(base64.urlsafe_b64encode(data))
+    # f.write(base64.urlsafe_b64encode(data))
+    f.write(base64.encodebytes(data))
