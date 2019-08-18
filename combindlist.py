@@ -1,6 +1,6 @@
 import urllib.request
 import base64
-import os
+# import os
 
 
 def base64_decode(base64_encode_str):
@@ -21,7 +21,31 @@ def gfwlist():
         'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'}
     f = urllib.request.Request(url, headers=headers)
     gfwlist = base64_decode(urllib.request.urlopen(f).read().decode('utf-8'))
+    print(gfwlist)
     return gfwlist
 
 
-    
+def personallist():
+    f = open('personallist.txt', 'r')
+    personallist = f.read()
+    f.close()
+    print(personallist)
+    return personallist
+
+
+fulllist = personallist() + gfwlist()
+
+# with open('fulllist.txt', 'w') as f:
+#    f.write(fulllist)#
+
+# with open('fulllist.txt', 'rb') as f:
+#    data = f.read()
+
+with open('fulllist.txt', 'wb') as f:
+    f.write(base64.encodebytes(fulllist.encode('utf-8')))
+
+
+# encode64 = base64.b64encode(fulllist.encode('utf-8'))
+# f = open('fulllist.txt', 'wb')
+# f.write(encode64)
+# f.close()
