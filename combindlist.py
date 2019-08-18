@@ -34,15 +34,16 @@ def personallist():
 
 
 fulllist = personallist() + gfwlist()
+data = fulllist.encode('utf-8')
 
 with open('fulllist.txt', 'w') as f:
-   f.write(fulllist)#
+    f.write(fulllist)
 
 # with open('fulllist.txt', 'rb') as f:
 #    data = f.read()
 
 with open('fulllist_b64.txt', 'wb') as f:
-    f.write(base64.encodebytes(fulllist.encode('utf-8')))
+    f.write(base64.encodebytes(data))
 
 
 # encode64 = base64.b64encode(fulllist.encode('utf-8'))
